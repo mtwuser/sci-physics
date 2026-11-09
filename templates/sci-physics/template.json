@@ -1,0 +1,39 @@
+{
+  "schema_version": "zcg-template-v1",
+  "template_id": "sci-physics",
+  "kind": "context-stack",
+  "target_role": "knowledge",
+  "description": "Physical Sciences Knowledge Corpus (Noether Conservation Laws, Thermodynamics & CODATA SI Constants)",
+  "recommended_surface_bindings": [
+    {
+      "binding_id": "sci-physics-surface-binding",
+      "description": "Physical Sciences Knowledge Corpus (Noether Conservation Laws, Thermodynamics & CODATA SI Constants)",
+      "mode": "authoritative",
+      "target_globs": [
+        "*"
+      ],
+      "architectural_planes": [
+        "*"
+      ],
+      "scopes": [
+        "*"
+      ],
+      "traits": [
+        "*"
+      ],
+      "default_resolution": "L2",
+      "invariants": [
+        "Enforce sci-physics (context-stack) rules and canonical assets"
+      ],
+      "rule_files": [
+        "templates/sci-physics/rules/sci-physics.md"
+      ],
+      "canonical_templates": [
+        "templates/sci-physics/skills/sci-physics-guide/SKILL.md",
+        "templates/sci-physics/assets/canonical_snippet.md"
+      ]
+    }
+  ],
+  "stack_group": "context-stack",
+  "extends": "scientific-methodology"
+}

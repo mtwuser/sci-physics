@@ -1,0 +1,109 @@
+{
+  "schema_version": "zcg-node-v1",
+  "layer_id": "sci-physics",
+  "layer_role": "knowledge",
+  "precedence": 20,
+  "entity_kind": "open-source",
+  "governing_root_id": "sci-physics",
+  "visibility": "public",
+  "stewardship_stage": "public-community",
+  "public_url": "https://github.com/mtwuser/sci-physics.git",
+  "canonical_authority_url": "https://github.com/consortium-sci/sci-physics.git",
+  "description": "Physical Sciences Knowledge Corpus (Noether Conservation Laws, Thermodynamics & CODATA SI Constants)",
+  "upstream_layer": {
+    "layer_id": "mtwuser/zero-cloud-gravity",
+    "repository": "https://github.com/mtwuser/zero-cloud-gravity.git",
+    "branch": "master"
+  },
+  "mounted_layers_dir": "layers",
+  "mounted_layers": [],
+  "default_stack_templates": [
+    "science-base",
+    "scientific-methodology",
+    "sci-physics",
+    "node-work-cockpit"
+  ],
+  "baseline_guardrails": [
+    "Enforce sci-physics E3..E1 primary-source citation_receipt integrity"
+  ],
+  "surface_bindings": [
+    {
+      "binding_id": "sci-physics-surface-binding",
+      "description": "Physical Sciences Knowledge Corpus (Noether Conservation Laws, Thermodynamics & CODATA SI Constants)",
+      "mode": "authoritative",
+      "target_globs": [
+        "*"
+      ],
+      "architectural_planes": [
+        "*"
+      ],
+      "scopes": [
+        "*"
+      ],
+      "traits": [
+        "*"
+      ],
+      "default_resolution": "L2",
+      "invariants": [
+        "Enforce sci-physics (context-stack) rules and canonical assets"
+      ],
+      "rule_files": [
+        "templates/sci-physics/rules/sci-physics.md"
+      ],
+      "canonical_templates": [
+        "templates/sci-physics/skills/sci-physics-guide/SKILL.md",
+        "templates/sci-physics/assets/canonical_snippet.md"
+      ]
+    }
+  ],
+  "environments": {
+    "dev": {
+      "description": "Local sci-physics curation workspace",
+      "access_mode": "read-write-local",
+      "default_guardrails": [
+        "Verify sci-physics primary citations"
+      ]
+    },
+    "tst": {
+      "description": "Validation environment for sci-physics",
+      "access_mode": "read-and-test-trigger",
+      "default_guardrails": [
+        "Verify sci-physics rcap1 capsules"
+      ]
+    },
+    "pre": {
+      "description": "Staging audit for sci-physics",
+      "access_mode": "strictly-read-only",
+      "default_guardrails": [
+        "Audit sci-physics citation drift"
+      ]
+    },
+    "pro": {
+      "description": "Canonical public corpus for sci-physics",
+      "access_mode": "strictly-read-only-audited",
+      "default_guardrails": [
+        "Enforce sci-physics E3..E1 immutability"
+      ]
+    }
+  },
+  "federated_mcps": [],
+  "layer_authority": {
+    "owner_role": "sci-physics Knowledge Steward",
+    "authorized_emails": [
+      "mtwuser@users.noreply.github.com"
+    ],
+    "escalation_contact": "sci-physics Knowledge Steward <mtwuser@users.noreply.github.com>",
+    "roster": {
+      "owners": [
+        {
+          "email": "mtwuser@users.noreply.github.com",
+          "title": "sci-physics Knowledge Steward",
+          "squad": ""
+        }
+      ],
+      "maintainers": [],
+      "validators": [],
+      "members": []
+    }
+  }
+}
