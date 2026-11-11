@@ -1,0 +1,32 @@
+{
+  "schema_version": "zcg-dns-zone-v1",
+  "layer_id": "sci-physics",
+  "local_rfc6761_subdomain": "sci-physics.localhost",
+  "domain_governance": {
+    "governing_root_id": "sci-physics",
+    "canonical_domain": "",
+    "intranet_zone": "",
+    "local_dev_zone": "sci-physics.localhost",
+    "dns_publication": "public-authoritative",
+    "dns_authority": {
+      "governed_by": "sci-physics",
+      "delegated_operator_layer": "sci-physics",
+      "required_role": "owner",
+      "provider": "google-cloud-dns"
+    }
+  },
+  "records": [
+    {
+      "type": "A",
+      "name": "sci-physics.knowledge.local",
+      "target": "127.0.0.1",
+      "scope": "public-authoritative"
+    },
+    {
+      "type": "TXT",
+      "name": "_zcg-attest.sci-physics.knowledge.local",
+      "value": "v=zcg1; node=sci-physics; mode=full-open-source",
+      "scope": "public-authoritative"
+    }
+  ]
+}
