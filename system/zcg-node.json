@@ -106,5 +106,23 @@
       "members": []
     }
   },
-  "surface_veracity_mode": "full-open-source"
+  "surface_veracity_mode": "full-open-source",
+  "cockpit_port": 8724,
+  "git_governance": {
+    "capsule_ref_namespace": "refs/zcg/capsules"
+  },
+  "network_egress_policy": {
+    "mode": "curated-allowlist",
+    "allowed_domains": [
+      "github.com",
+      "zerocloudgravity.org",
+      "doi.org",
+      "arxiv.org"
+    ]
+  },
+  "surface_access": {
+    "enabled": true,
+    "default_ring": "R0",
+    "protect_mutating_ops": true
+  }
 }

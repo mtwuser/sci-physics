@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "path": ".agents/plugins",
+      "include_only": [
+        "knowledge-stewardship-portal"
+      ],
+      "exclude": [
+        "corporate-root-hub",
+        "node-work-cockpit",
+        "secops-mcp-guardian",
+        "sovereign-wallet-cockpit",
+        "tutor-study-cockpit",
+        "workstation-control-tower"
+      ]
+    }
+  ]
+}

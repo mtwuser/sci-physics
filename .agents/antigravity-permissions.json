@@ -1,0 +1,33 @@
+{
+  "schema_version": "zcg-agy-permissions-v1",
+  "layer_id": "sci-physics",
+  "governance_posture": "sovereign",
+  "purpose_archetype": "knowledge",
+  "environment": "dev",
+  "global_config_mutated": false,
+  "non_workspace_file_access": "workspace-only",
+  "read_only_grants": [],
+  "browser_allowlist": [
+    "http://dev.sci-physics.localhost:8724",
+    "http://127.0.0.1:8724",
+    "https://arxiv.org",
+    "https://doi.org",
+    "https://github.com",
+    "https://zerocloudgravity.org"
+  ],
+  "allowed_egress_domains": [
+    "arxiv.org",
+    "doi.org",
+    "github.com",
+    "zerocloudgravity.org"
+  ],
+  "cdn_origins": [],
+  "artifact_mirrors": {
+    "container_registry": "",
+    "pypi_index_url": "",
+    "apt_mirror_url": "",
+    "require_private_mirrors": false
+  },
+  "internet_access_policy": "curated-allowlist",
+  "auto_execution_policy": "bounded-safe"
+}

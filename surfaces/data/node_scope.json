@@ -14,10 +14,12 @@
       "knowledge-stewardship-portal"
     ],
     "enabled_modules": [
+      "spatial_atlas",
       "data_pipeline",
       "crud",
       "vault",
-      "node_mesh"
+      "node_mesh",
+      "tool_stack"
     ],
     "public_node_identity": {
       "node_id": "sci-physics",
@@ -38,8 +40,8 @@
         "Z3",
         "Z4"
       ],
-      "tier": "T2",
-      "latency_budget_ms": 1000,
+      "tier": "T1",
+      "latency_budget_ms": 200,
       "http_poll_stop_status": 286
     },
     "runtime_telemetry": {
@@ -47,6 +49,19 @@
       "health_score": 1.0,
       "telemetry_sink": ".agents/telemetry",
       "ledger_bridge": "WORKTASK.md"
+    },
+    "security_posture": {
+      "contract_rev": "zcg-security-posture-v1",
+      "score": 100,
+      "grade": "HARDENED",
+      "checks": {
+        "gitignore_runtime_hygiene": true,
+        "skill_supply_chain_trust": true,
+        "egress_and_airgap_confinement": true,
+        "surface_ring_governance": true,
+        "overlay_integrity": true
+      },
+      "recommendations": []
     },
     "dual_world_contract": {
       "common_base_plugin": "knowledge-stewardship-portal",
@@ -58,12 +73,23 @@
       "panel_title": "Epistemic Corpus & Data Pipeline — Capabilities (:8720)",
       "mode": "knowledge-stewardship-portal",
       "enabled_modules": [
+        "spatial_atlas",
         "data_pipeline",
         "crud",
         "vault",
-        "node_mesh"
+        "node_mesh",
+        "tool_stack"
       ],
       "modules": [
+        {
+          "module_id": "spatial_atlas",
+          "title": "Zone.Z4 2D/3D Spatial Atlas",
+          "endpoint": "/api/modules/spatial-atlas",
+          "actions": [
+            "inspect-atlas",
+            "inspect-scene"
+          ]
+        },
         {
           "module_id": "data_pipeline",
           "title": "Data Pipeline (CDC/CVS)",
@@ -99,6 +125,16 @@
           "endpoint": "/api/modules/node-mesh",
           "actions": [
             "inspect-mesh"
+          ]
+        },
+        {
+          "module_id": "tool_stack",
+          "title": "Isolated Tool Stack",
+          "endpoint": "/api/tools",
+          "actions": [
+            "list-tools",
+            "export-sarif",
+            "evaluate-decision"
           ]
         }
       ]
@@ -142,6 +178,7 @@
   "knowledge_docs": [
     "docs/README.md",
     "docs/architecture/01_physics_taxonomy_and_regime_map.md",
+    "docs/architecture/02_absolute_epoch_orbital_propagation_laws.md",
     "docs/guides/01_physical_modeling_and_dimensional_analysis_guide.md",
     "docs/reference/01_conservation_laws_thermodynamics_and_si_constants.md"
   ]

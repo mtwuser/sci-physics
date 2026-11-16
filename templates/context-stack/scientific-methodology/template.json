@@ -8,6 +8,6 @@
   "description": "Falsifiable hypothesis protocols, reproducible datasets, SI uncertainty bounds, and corpus curation.",
   "recommended_surface_bindings": [],
   "reconciled_upstream_sha256": {
-    "scientific-methodology.md": "c83b9d0fc1aadec3735201dfb3048afaccb5fa662996abe974925017adf67ad7"
+    "scientific-methodology.md": "03e9921bed25d9a86d3e1eb3be603b220186d8c5f29610cf7323ad19cc706f7e"
   }
 }

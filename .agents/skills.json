@@ -1,0 +1,64 @@
+{
+  "schema_version": "zcg-skills-v1",
+  "active_stack_groups": [
+    "context-stack",
+    "human-stack",
+    "plugin-stack"
+  ],
+  "active_templates": [
+    "knowledge-stewardship-portal",
+    "sci-physics",
+    "science-base",
+    "scientific-methodology",
+    "universal-base"
+  ],
+  "enabled_skills": [
+    "architecture",
+    "audit",
+    "continue",
+    "enrich",
+    "governance",
+    "review",
+    "sci-physics-guide",
+    "sclose",
+    "sopen"
+  ],
+  "disabled_skills": [
+    "academic-tutor",
+    "ledger-surface-audit",
+    "nist-csf-audit",
+    "oss-contribute",
+    "refactoring",
+    "release",
+    "secops-mcp-orchestration",
+    "testing",
+    "validation"
+  ],
+  "entries": [
+    {
+      "path": ".agents/skills",
+      "include_only": [
+        "architecture",
+        "audit",
+        "continue",
+        "enrich",
+        "governance",
+        "review",
+        "sci-physics-guide",
+        "sclose",
+        "sopen"
+      ],
+      "exclude": [
+        "academic-tutor",
+        "ledger-surface-audit",
+        "nist-csf-audit",
+        "oss-contribute",
+        "refactoring",
+        "release",
+        "secops-mcp-orchestration",
+        "testing",
+        "validation"
+      ]
+    }
+  ]
+}

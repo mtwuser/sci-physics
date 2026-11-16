@@ -1,10 +1,11 @@
 {
   "schema_version": "zcg-dns-zone-v1",
   "layer_id": "sci-physics",
-  "local_rfc6761_subdomain": "sci-physics.localhost",
+  "local_rfc6761_subdomain": "dev.sci-physics.localhost",
   "domain_governance": {
     "governing_root_id": "sci-physics",
     "canonical_domain": "",
+    "developer_domain": "",
     "intranet_zone": "",
     "local_dev_zone": "sci-physics.localhost",
     "dns_publication": "public-authoritative",

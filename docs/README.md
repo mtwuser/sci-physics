@@ -10,4 +10,5 @@ epistemic_grade: E2
 
 - [Physical Modeling, Buckingham $\Pi$ Dimensional Analysis & Regime Verification Guide (`M1 -> M4` — `sci-physics` `E1`)](guides/01_physical_modeling_and_dimensional_analysis_guide.md)
 - [Physical Sciences Taxonomy, Dimensionless Regimes & Scale Hierarchy (`sci-physics` — `E3`)](architecture/01_physics_taxonomy_and_regime_map.md)
+- [Absolute-Epoch Keplerian vs. Perturbed Cowell Orbital Propagation Laws (`sci-physics` — `E3`)](architecture/02_absolute_epoch_orbital_propagation_laws.md)
 - [Exact SI Constants, Noether Conservation Laws, Thermodynamics & Transport (`sci-physics` — `E3`)](reference/01_conservation_laws_thermodynamics_and_si_constants.md)

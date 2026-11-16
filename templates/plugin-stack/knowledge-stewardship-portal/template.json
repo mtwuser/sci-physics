@@ -15,10 +15,12 @@
     ],
     "healthcheck_endpoint": "/healthz",
     "enabled_modules": [
+      "spatial_atlas",
       "data_pipeline",
       "crud",
       "vault",
-      "node_mesh"
+      "node_mesh",
+      "tool_stack"
     ],
     "web_assets": {
       "templates_dir": "web/templates",

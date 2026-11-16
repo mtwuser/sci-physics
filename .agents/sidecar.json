@@ -1,0 +1,31 @@
+{
+  "schema_version": "zcg-sidecar-v1",
+  "layer_id": "sci-physics",
+  "environment": "dev",
+  "daemons": [
+    {
+      "daemon_id": "zcg-mcp",
+      "command": "/home/user/Projects/dev-zero-cloud-gravity/.venv/bin/python3",
+      "args": [
+        "-m",
+        "zcg.mcp.server",
+        "--repo-dir",
+        "/home/user/Projects/zcg-knowledge/sci-physics"
+      ],
+      "transport": "stdio",
+      "endpoint": null,
+      "restart_policy": "on-failure",
+      "graceful_stop_timeout_s": 10
+    },
+    {
+      "daemon_id": "sci-physics-cockpit",
+      "transport": "http-asgi",
+      "port": 8724,
+      "healthcheck_url": "http://127.0.0.1:8724/healthz",
+      "restart_policy": "on-failure",
+      "graceful_stop_timeout_s": 10
+    }
+  ],
+  "isolated_tools": [],
+  "mcp_connectors": []
+}

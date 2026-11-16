@@ -2,7 +2,7 @@
   "service_id": "knowledge-stewardship-portal",
   "contract_version": "zcg-service-v1",
   "bind_host": "127.0.0.1",
-  "enabled_modules": ["data_pipeline", "crud", "vault", "node_mesh"],
+  "enabled_modules": ["spatial_atlas", "data_pipeline", "crud", "vault", "node_mesh", "tool_stack"],
   "data_scopes": ["node", "network", "federation"],
   "surfaces": [
     "surfaces/web/index.html",

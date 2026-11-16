@@ -8,7 +8,7 @@
   "intranet_topology": {
     "base_domain": "sci-physics.knowledge.local",
     "node_host": "sci-physics.knowledge.local",
-    "port": 8720,
+    "port": 8724,
     "promotion_pipeline": "staged",
     "visibility": "public",
     "environment_promotion_order": [
@@ -24,10 +24,10 @@
       "pro": "https://sci-physics.knowledge.local"
     },
     "local_environment_urls": {
-      "dev": "http://127.0.0.1:8720/?env=dev",
-      "tst": "http://127.0.0.1:8720/?env=tst",
-      "pre": "http://127.0.0.1:8720/?env=pre",
-      "pro": "http://127.0.0.1:8720/?env=pro"
+      "dev": "http://127.0.0.1:8724/?env=dev",
+      "tst": "http://127.0.0.1:8724/?env=tst",
+      "pre": "http://127.0.0.1:8724/?env=pre",
+      "pro": "http://127.0.0.1:8724/?env=pro"
     },
     "environment_reachability": {
       "dev": "local-loopback-only",
@@ -36,20 +36,21 @@
       "pro": "public-remote-live"
     },
     "remote_production_url": "https://github.com/mtwuser/sci-physics.git",
-    "active_subdomain_url": "https://sci-physics.knowledge.local",
-    "localhost_url": "http://127.0.0.1:8720/?env=pro",
-    "local_subdomain_host": "sci-physics.localhost",
-    "local_subdomain_url": "http://sci-physics.localhost:8720/?env=pro",
-    "local_subdomain_dashboard_url": "http://sci-physics.localhost:8720/dashboard",
+    "active_subdomain_url": "https://dev.sci-physics.knowledge.local",
+    "localhost_url": "http://127.0.0.1:8724/?env=dev",
+    "local_subdomain_host": "dev.sci-physics.localhost",
+    "local_subdomain_url": "http://dev.sci-physics.localhost:8724/?env=dev",
+    "local_subdomain_dashboard_url": "http://dev.sci-physics.localhost:8724/dashboard",
     "local_subdomain_urls": {
-      "dev": "http://dev.sci-physics.localhost:8720/?env=dev",
-      "tst": "http://tst.sci-physics.localhost:8720/?env=tst",
-      "pre": "http://pre.sci-physics.localhost:8720/?env=pre",
-      "pro": "http://sci-physics.localhost:8720/?env=pro"
+      "dev": "http://dev.sci-physics.localhost:8724/?env=dev",
+      "tst": "http://tst.sci-physics.localhost:8724/?env=tst",
+      "pre": "http://pre.sci-physics.localhost:8724/?env=pre",
+      "pro": "http://sci-physics.localhost:8724/?env=pro"
     },
     "domain_governance": {
       "governing_root_id": "sci-physics",
       "canonical_domain": "",
+      "developer_domain": "",
       "intranet_zone": "",
       "local_dev_zone": "sci-physics.localhost",
       "dns_publication": "public-authoritative",
@@ -68,15 +69,15 @@
       "workspace_path": ".",
       "plugin_id": "knowledge-stewardship-portal",
       "status": "healthy",
-      "environment": "pro",
+      "environment": "dev",
       "daemon_active": false,
-      "localhost_url": "http://sci-physics.localhost:8720"
+      "localhost_url": "http://dev.sci-physics.localhost:8724"
     }
   ],
-  "cloud_iac_target": {
-    "provider": "google-cloud-iac",
-    "environment": "pro",
-    "stage": "production-cloud-run-gke",
-    "iac_manifest": "surfaces/infra/cloud_deployment.json"
+  "deployment_target": {
+    "provider": "local-sovereign",
+    "environment": "dev",
+    "stage": "local-loopback-w3c",
+    "iac_manifest": "none"
   }
 }

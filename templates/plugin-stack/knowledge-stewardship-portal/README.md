@@ -13,7 +13,7 @@ The table below summarizes the canonical metadata declared in [`template.json`](
 | **`id`** | `knowledge-stewardship-portal` | Default `knowledge` role plugin in `CANONICAL_STARTER_TEMPLATES` (`constants.py`) |
 | **`stack_group`** | `plugin-stack` | Editable Reference Dashboard & Runtime Surface Axis |
 | **`extends`** | `"scientific-methodology"` | Transitively resolves `universal-base -> science-base -> scientific-methodology` |
-| **`enabled_modules`** | `["data_pipeline", "crud", "vault", "node_mesh"]` | Composes stateful CDC/CVS ingestion, epistemic CRUD entries, blob vault, and 1-hop mesh |
+| **`enabled_modules`** | `["spatial_atlas", "data_pipeline", "crud", "vault", "node_mesh", "tool_stack"]` | Composes interactive 2D/3D Spatial Atlas, stateful CDC/CVS ingestion, epistemic CRUD entries, blob vault, 1-hop mesh, and isolated `.zcg/tools` catalog |
 | **`web_assets`** | `web/templates/` + `web/static/` | Cascading `TemplateCatalog` (`index.html`, `partials/overview.html`) & `--zcg-*` `plugin.css` |
 
 ---
