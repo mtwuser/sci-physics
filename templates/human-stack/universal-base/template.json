@@ -6,8 +6,15 @@
   "extends": null,
   "target_role": "workstation",
   "description": "Universal Zero-Cloud Antigravity cognitive, modular, verification, and commit baseline.",
+  "associated_global_skills": [
+    "sopen",
+    "continue",
+    "sclose",
+    "review",
+    "enrich"
+  ],
   "recommended_surface_bindings": [],
   "reconciled_upstream_sha256": {
-    "universal-base.md": "fdc43d1fbbd4184f082ffbfa6c9a2bab5eec20548d6e298d1815f24d11790a32"
+    "universal-base.md": "cdb537b1c9545d96bf5e8a39e977985ea1b29c1f520682f02d5bde3bd4d1621b"
   }
 }
