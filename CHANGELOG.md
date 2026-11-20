@@ -2,7 +2,7 @@
 
 All notable changes to this public epistemic knowledge corpus are documented in this file.
 
-## [Unreleased]
+## [1.1.0] - 2026-11-20
 
 ### Added
 - **Absolute-Epoch Keplerian vs. Cowell Orbital Propagation Laws (`docs/architecture/02_absolute_epoch_orbital_propagation_laws.md`)**: Formalized `E3` zero-$\Delta t$-drift epoch-anchored Keplerian propagation vs. perturbed Cowell symplectic integration, and reconciled `sci-physics` onto `ZeroCloudGravity v1.2.0` (`:8724`, `100/100` security posture).

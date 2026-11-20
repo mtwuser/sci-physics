@@ -1,7 +1,7 @@
-# sci-physics — Sovereign Epistemic Knowledge Corpus (`v1.0.0`)
+# sci-physics — Sovereign Epistemic Knowledge Corpus (`v1.1.0`)
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
-[![ZeroCloudGravity](https://img.shields.io/badge/ZeroCloudGravity-v1.0.0-0F766E.svg)](https://github.com/mtwuser/zero-cloud-gravity)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](VERSION)
+[![ZeroCloudGravity](https://img.shields.io/badge/ZeroCloudGravity-v1.2.0-0F766E.svg)](https://github.com/mtwuser/zero-cloud-gravity)
 [![Epistemic Grade](https://img.shields.io/badge/epistemic_grade-E3..E1-1D4ED8.svg)](docs/README.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -20,7 +20,7 @@ All sections expose deterministic `rcap1` (`L0 -> L3`) capsules and cryptographi
 
 ## 2. Mounting & Querying from Any `ZeroCloudGravity` Node
 
-Link or mount this corpus into a personal (`<persona>-pc`, `<persona>-tutor`), research, or enterprise node without cloud dependencies:
+Link or mount this corpus into a personal (`<persona>-profile`, `<persona>-tutor`), research, or enterprise node without cloud dependencies:
 
 ```bash
 zcg link <your-node-dir> --target https://github.com/mtwuser/sci-physics.git --relation knowledge-feed

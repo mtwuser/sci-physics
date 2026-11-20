@@ -5,7 +5,7 @@
   "daemons": [
     {
       "daemon_id": "zcg-mcp",
-      "command": "/home/user/Projects/dev-zero-cloud-gravity/.venv/bin/python",
+      "command": "/home/user/Projects/dev-zero-cloud-gravity/.venv/bin/python3",
       "args": [
         "-m",
         "zcg.mcp.server",
